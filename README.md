@@ -1,10 +1,11 @@
 ## About
 
-A template repository using Discord.js to boostrap your Discord Bot with Node.js to use slash commands. This template provides the basic structure for building commands, and to get started with your users.
+A template repository using Discord.js to boostrap your Discord Bot with Node.js to use slash commands. This template also includes Sequelize ORM, which means it is compatible with Postgres, MSSQL, Mysql, etc. This template provides the basic structure for building commands, and to get started with your users.
 
 ## Requirements
 * Node.js Runtime
 * NPM
+* Some SQL dialect running (MSSQL, Postgresql, MySQL, etc)
 * Discord Bot Token/ClientId
 
 ## Installation
@@ -19,6 +20,11 @@ Create a new .env file in the root project named either .dev.env or /.NODE_ENV.e
 DISCORD_TOKEN=YOURDISCORDTOKENHERE
 CLIENT_ID=YOURDISCORDCLIENTIDHERE
 SHOULD_CREATE_COMMANDS=true
+DB_HOST=
+POSTGRES_USER=    
+POSTGRES_DB=
+POSTGRES_PASSWORD=
+FORCE_DB_RESET=true
 ```
 Note: should create commands tells the bot whether or not to create the discord slash commands. when rapidly developing, waiting for this call every bot startup can be cumbersome.
 
